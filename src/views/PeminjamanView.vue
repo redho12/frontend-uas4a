@@ -4,7 +4,7 @@
       <b-icon icon="arrow-left" 
        aria-hidden="true"></b-icon>
     </b-button>
-    <v-layout wrap style="margin-top: 26px">
+    <v-layout wrap style="margin-top: 5px">
       <v-flex sm12 md20 offset-md2>
         <h2 class="text-light bg-dark text-center">Data Riwayat Peminjam Buku</h2>
         <v-card>
@@ -38,7 +38,7 @@
                      aria-controls="my-table"
                   ></b-pagination>
 
-                  <p class="mt-3">Current Page: {{ currentPage }}</p>
+                  <p class="mt-3">Halaman Saat Ini: {{ currentPage }}</p>
                   <b-form @submit="onSubmit" @reset="onReset" v-if="show">
                      <b-form-group
                      id="input-group-1"
