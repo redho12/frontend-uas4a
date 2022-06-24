@@ -1,53 +1,17 @@
 <template>
   <v-container>
-    <b-button size="sm" class="mb-2">
-      <b-icon icon="arrow-left" @click="redirectBack3()" aria-hidden="true"></b-icon>
+    <b-button size="sm" class="mb-2" @click="redirectBack3()">
+      <b-icon icon="arrow-left" 
+       aria-hidden="true"></b-icon>
     </b-button>
     <v-layout wrap style="margin-top: 20px">
       <v-flex sm12 md6 offset-md3>
-        <h2 class="text-light bg-dark">Katalog Buku</h2>
+        <h2 class="text-light bg-dark">Peminjaman Buku</h2>
         <v-card>
           <v-col>
             <v-row>
               <v-col md="12">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <!-- <th scope="col">#</th> -->
-                      <!-- <th scope="col"></th> -->
-                      <!-- <th scope="col">Last</th>
-                      <th scope="col">Handle</th> -->
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="col">isbn</th>
-                      <td v-for="perpus in perpus" :key="perpus">{{ perpus }}</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">judul</th>
-                      <td v-for="judul in judul" :key="judul">{{ judul }}</td>
-                      <!-- <td>Thornton</td>
-                      <td>@fat</td>  -->
-                    </tr>
-                    <tr>
-                      <th scope="col">pengarang</th>
-                      <td v-for="pengarang in pengarang" :key="pengarang">{{ pengarang }}</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">penerbit</th>
-                      <td v-for="penerbit in penerbit" :key="penerbit">{{ penerbit }}</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">tahun_terbit</th>
-                      <td v-for="tahun_terbit in tahun_terbit" :key="tahun_terbit">{{ tahun_terbit }}</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">kategori</th>
-                      <td v-for="kategori in kategori" :key="kategori">{{ kategori }}</td>
-                    </tr>
-                  </tbody>
-                </table>
+                
               </v-col>
             </v-row>
           </v-col>

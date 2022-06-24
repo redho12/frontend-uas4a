@@ -12,28 +12,16 @@
                 >Home</router-link
               >
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link text-light" to="/contact"
-                >Contact</router-link
-              >
-            </li>
           </ul>
           <ul class="navbar-nav ml-auto text-light">
-            <b-nav-item-dropdown right>
-              <template #button-content>
-                <em class="text-light">User</em>
-              </template>
-              <b-button variant="outline-primary" @click="redirectProfile()">
-                <b-icon icon="person-fill"></b-icon> Profile
-              </b-button>
-              <b-button
-                variant="outline-info"
-                class="mb-2"
-                @click="redirectLogout()"
-              >
-                <b-icon icon="power" aria-hidden="true"></b-icon> Logout
-              </b-button>
-            </b-nav-item-dropdown>
+            <b-button
+              variant="outline-info"
+              class="mb-2"
+              type="primary"
+              @click="redirectLogout()"
+            >
+              <b-icon icon="power" aria-hidden="true"></b-icon> Logout
+            </b-button>
           </ul>
         </b-collapse>
       </b-navbar>

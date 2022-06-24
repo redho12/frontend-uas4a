@@ -9,7 +9,7 @@
     </b-button>
     <v-layout wrap style="margin-top: 20px">
       <v-flex sm12 md6 offset-md3>
-        <h2 class="text-light bg-dark">Pengembalian Buku</h2>
+        <h2 class="text-light bg-dark">Daftar Nama Peminjaman Buku</h2>
         <v-card>
           <v-col>
             <v-row>
