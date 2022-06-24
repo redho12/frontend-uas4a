@@ -10,6 +10,7 @@ import KatalogView from '../views/KatalogView.vue'
 import PeminjamanView from '../views/PeminjamanView.vue'
 import NamapeminjamView from '../views/NamapeminjamView.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -58,6 +59,7 @@ const routes = [
     name: 'namapeminjam',
     component: NamapeminjamView
   },
+  
   {
     path: '/about',
     name: 'about',
