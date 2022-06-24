@@ -83,12 +83,12 @@
                      </b-form-group>
 
                      <b-form-group
-                     id="input-group-3"
+                     id="input-group-4"
                      label="tanggal_pinjam:"
-                     label-for="input-3"
+                     label-for="input-4"
                      >
                      <b-form-input
-                        id="input-3"
+                        id="input-4"
                         v-model="form.tanggal_pinjam"
                         type="text"
                         required
@@ -97,12 +97,12 @@
                      </b-form-group>
 
                      <b-form-group
-                     id="input-group-3"
+                     id="input-group-5"
                      label="Jenis Kelamin:"
-                     label-for="input-3"
+                     label-for="input-5"
                      >
                      <b-form-input
-                        id="input-3"
+                        id="input-5"
                         v-model="form.tanggal_pengembalian"
                         type="text"
                         required
@@ -111,12 +111,12 @@
                      </b-form-group>
 
                      <b-form-group
-                     id="input-group-3"
+                     id="input-group-6"
                      label="No Hp:"
-                     label-for="input-3"
+                     label-for="input-6"
                      >
                      <b-form-input
-                        id="input-3"
+                        id="input-6"
                         v-model="form.judul"
                         type="text"
                         required
