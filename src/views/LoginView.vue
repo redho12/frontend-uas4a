@@ -7,17 +7,21 @@
           <v-col md="12">
             <v-row>
               <v-col md="12">
-                <v-text-field label="Username"> </v-text-field>
+                <v-text-field outline label="Username" type="text">
+                <input v-model="username" placeholder="Username"/>
+                </v-text-field>
               </v-col>
               <v-col>
-                <v-text-field label="Password" type="password"> </v-text-field>
+                <v-text-field outline label="Password" type="Password">
+                <input v-model="password" placeholder="Password"/>
+                </v-text-field>
               </v-col>
             </v-row>
           </v-col>
           <v-col md="12">
             <v-row>
               <v-col md="12">
-                <v-btn block="" color="primary" @click="redirectLogin()">
+                <v-btn block="" color="primary" v-on:click="login">
                   Login</v-btn
                 >
               </v-col>
@@ -44,14 +48,31 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
+   data() {
+     return {
+       username: '',
+       password: ''
+     }
+   },
   methods: {
     redirectDaftar() {
       this.$router.push("/daftar");
     },
-    redirectLogin() {
-      this.$router.push("/home");
-    },
+    async login() {
+      let result = await axios.get(
+        'https://bookbuku1.000webhostapp.com/baru/akun/login.php?username=${this.username}&password=${this.password}'
+      )
+
+      if(result.status==200 && result.data.length>0)
+      {
+        localStorage.setItem("user-info",JSON.stringify(result.data[0]))
+        this.$router.push({name:'home'})
+      }
+      console.warn(result)
+    }
   },
 };
 </script>

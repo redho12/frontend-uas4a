@@ -5,10 +5,10 @@ import DaftarView from '../views/DaftarView.vue'
 import LupaView from '../views/LupaView.vue'
 import ResetView from '../views/ResetView.vue'
 import HomeView from '../views/HomeView.vue'
-import ProfileView from '../views/ProfileView.vue'
 import KatalogView from '../views/KatalogView.vue'
 import PeminjamanView from '../views/PeminjamanView.vue'
 import NamapeminjamView from '../views/NamapeminjamView.vue'
+import TestView from '../views/TestView.vue'
 
 
 Vue.use(VueRouter)
@@ -40,11 +40,6 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/profile',
-    name: 'profile',
-    component: ProfileView
-  },
-  {
     path: '/katalog',
     name: 'katalog',
     component: KatalogView
@@ -58,6 +53,11 @@ const routes = [
     path: '/namapeminjam',
     name: 'namapeminjam',
     component: NamapeminjamView
+  },
+  {
+    path: '/test',
+    name: 'test',
+    component: TestView
   },
   
   {
