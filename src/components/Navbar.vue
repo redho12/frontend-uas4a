@@ -14,14 +14,7 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto text-light">
-            <b-button
-              variant="outline-info"
-              class="mb-2"
-              type="primary"
-              @click="redirectLogout()"
-            >
-              <b-icon icon="power" aria-hidden="true"></b-icon> Logout
-            </b-button>
+            
           </ul>
         </b-collapse>
       </b-navbar>
