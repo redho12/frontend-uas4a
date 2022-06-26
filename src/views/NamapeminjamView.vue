@@ -284,7 +284,7 @@
                               <th>jenis kelamin</th>
                               <th>no_hp</th>
                               <th>Edit</th>
-                              <th>Delete</th>
+                              
                             </tr>
                           </thead>
                           <tbody>
@@ -314,21 +314,7 @@
                                   ><i class="glyphicon glyphicon-edit"></i
                                 ></a>
                               </td>
-                              <td>
-                                <a
-                                  href="#"
-                                  class="btn"
-                                  @click="
-                                    showDeleteModal = true;
-                                    selectPerpus(akun);
-                                  "
-                                  ><b-icon
-                                    icon="x-circle"
-                                    variant="danger"
-                                  ></b-icon
-                                  ><i class="glyphicon glyphicon-trash"></i
-                                ></a>
-                              </td>
+                              
                             </tr>
                           </tbody>
                         </table>
