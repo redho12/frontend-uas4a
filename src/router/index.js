@@ -9,6 +9,7 @@ import KatalogView from '../views/KatalogView.vue'
 import PeminjamanView from '../views/PeminjamanView.vue'
 import NamapeminjamView from '../views/NamapeminjamView.vue'
 import TestView from '../views/TestView.vue'
+import RiwayatView from '../views/RiwayatView.vue'
 
 
 Vue.use(VueRouter)
@@ -58,6 +59,11 @@ const routes = [
     path: '/test',
     name: 'test',
     component: TestView
+  },
+  {
+    path: '/riwayat',
+    name: 'riwayat',
+    component: RiwayatView
   },
   
   {

@@ -28,9 +28,9 @@
               alt="..."
             />
             <div class="card-body">
-              <b-button size="sm" @click="redirectPeminjaman()" class="mb-2">
+              <b-button size="sm" @click="redirectRiwayat()" class="mb-2">
                 <b-icon icon="arrow-right" aria-hidden="true"></b-icon>
-                Peminjaman Buku
+                Riwayat Peminjaman Buku
               </b-button>
             </div>
           </div>
@@ -84,8 +84,8 @@ export default {
     redirectKatalog() {
       this.$router.push("/katalog");
     },
-    redirectPeminjaman() {
-      this.$router.push("/peminjaman");
+    redirectRiwayat() {
+      this.$router.push("/riwayat");
     },
     redirectNamapeminjam() {
       this.$router.push("/namapeminjam");
