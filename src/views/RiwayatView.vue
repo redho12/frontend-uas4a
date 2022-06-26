@@ -24,16 +24,11 @@
                   </div>
                   <div class="modal-body p-4">
                     <form action="#" method="post">
+                     
+
                       <div class="form-group">
-                        <input
-                          type="text"
-                          name="id"
-                          class="form-control form-control-lg"
-                          placeholder="id"
-                          v-model="newRiwayat.id"
-                        />
-                      </div>
-                      <div class="form-group">
+                        <div class="text-nowrap bg-light border">
+                        Isbn
                         <input
                           type="number"
                           name="isbn"
@@ -41,43 +36,61 @@
                           placeholder="isbn"
                           v-model="newRiwayat.isbn"
                         />
+                        </div>
                       </div>
+
                       <div class="form-group">
+                        <div class="text-nowrap bg-light border">
+                        Nama Lengkap
                         <input
                           type="text"
                           name="username"
                           class="form-control form-control-lg"
-                          placeholder="username"
+                          placeholder="Nama Lengkap"
                           v-model="newRiwayat.username"
                         />
+                        </div>
                       </div>
+
                       <div class="form-group">
+                        <div class="text-nowrap bg-light border">
+                        Tanggal Pinjam
                         <input
                           type="text"
                           name="tanggl_pinjam"
                           class="form-control form-control-lg"
-                          placeholder="tanggl_pinjam"
+                          placeholder="Tanggl Pinjam"
                           v-model="newRiwayat.tanggl_pinjam"
                         />
+                        </div>
                       </div>
+
                       <div class="form-group">
+                        <div class="text-nowrap bg-light border">
+                        Tanggal Pengembalian
                         <input
                           type="text"
                           name="tanggal_pengembalian"
                           class="form-control form-control-lg"
-                          placeholder="tanggal_pengembalian"
+                          placeholder="Tanggal Pengembalian"
                           v-model="newRiwayat.tanggal_pengembalian"
                         />
+                        </div>
                       </div>
+
                       <div class="form-group">
+                        <div class="text-nowrap bg-light border">
+                        Judul
                         <input
                           type="text"
                           name="judul"
                           class="form-control form-control-lg"
-                          placeholder="judul"
+                          placeholder="Judul"
                           v-model="newRiwayat.judul"
                         />
+                        </div>
                       </div>
+
                       <div class="form-group">
                         <button
                           class="btn btn-info btn-block btn-lg"
@@ -167,16 +180,20 @@
                 </div>
               </div>
             </div>
+
             <v-row>
-              <v-col md="12">
-                <v-col>
-                  <v-row>
-                    <button
-                      class="btn btn-info float-right"
+              <button
+                      class="btn btn-success float-left"
                       @click="showAddModal = true"
                     >
-                      Add peminjam
+                      Add Riwayat Peminjam
+                      <b-icon icon="folder-plus"></b-icon>
                     </button>
+              <v-col md="12">
+                
+                <v-col>
+                  <v-row>
+                    
 
                     <hr class="bg-info" />
                     <div class="alert alert-danger" v-if="errorMsg">
@@ -216,23 +233,33 @@
                               <td>
                                 <a
                                   href="#"
-                                  class="btn btn-success"
+                                  class="btn"
                                   @click="
                                     showEditModal = true;
                                     selectPerpus(riwayat);
                                   "
+                                  >
+                                  <b-icon
+                                    icon="info-circle-fill"
+                                    variant="success"
+                                  ></b-icon
                                   ><i class="glyphicon glyphicon-edit"></i
                                 ></a>
                               </td>
                               <td>
                                 <a
                                   href="#"
-                                  class="btn btn-danger"
+                                  class="btn"
                                   @click="
                                     showDeleteModal = true;
                                     selectPerpus(riwayat);
                                   "
-                                  ><i class="glyphicon glyphicon-trash"></i
+                                  >
+                                  <b-icon
+                                    icon="x-circle"
+                                    variant="danger"
+                                  ></b-icon>
+                                  <i class="glyphicon glyphicon-trash"></i
                                 ></a>
                               </td>
                             </tr>

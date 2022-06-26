@@ -138,7 +138,7 @@
                           </div>
                           <div class="modal-body p-4">
                             <h4>Apa kamu yakin ingin menghapus?</h4>
-                            <h5>Dihapus {{ currentperpus.judul }}</h5>
+                            <h5>Dihapus {{ currentperpus.isbn }}</h5>
                             <hr />
                             <button
                               class="btn btn-danger btn-lg"
@@ -235,15 +235,17 @@
                 </div>
               </div>
             </div>
+
             <v-row>
-              <v-col md="12">
-                <button
+              <button
                       class="btn btn-success float-left"
                       @click="showAddModal = true"
                     >
                       Add Buku
                       <b-icon icon="folder-plus"></b-icon>
                     </button>
+              <v-col md="12">
+                
                 <v-col>
                   <v-row>
                   

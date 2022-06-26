@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import LoginView from '../views/LoginView.vue'
-import DaftarView from '../views/DaftarView.vue'
-import LupaView from '../views/LupaView.vue'
-import ResetView from '../views/ResetView.vue'
 import HomeView from '../views/HomeView.vue'
 import KatalogView from '../views/KatalogView.vue'
 import PeminjamanView from '../views/PeminjamanView.vue'
@@ -19,21 +16,6 @@ const routes = [
     path: '/',
     name: 'login',
     component: LoginView
-  },
-  {
-    path: '/daftar',
-    name: 'daftar',
-    component: DaftarView
-  },
-  {
-    path: '/lupa',
-    name: 'lupa',
-    component: LupaView
-  },
-  {
-    path: '/reset',
-    name: 'reset',
-    component: ResetView
   },
   {
     path: '/home',
