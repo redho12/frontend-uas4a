@@ -5,7 +5,7 @@
     </b-button>
     <v-layout wrap style="margin-top: 5px">
       <v-flex sm12 md20 offset-md2>
-        <h2 class="text-light bg-dark text-center">Halaman Test</h2>
+        <h2 class="text-light bg-dark text-center">Halaman Riwayat</h2>
         <v-card>
           <v-col>
             <!-- add new riwayat -->
