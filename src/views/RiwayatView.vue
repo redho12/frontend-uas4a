@@ -292,6 +292,7 @@
                                 showDeleteModal = false;
                                 hapusPerpus();
                                 clearMsg();
+                                redirectBalik();
                               "
                             >
                               Yes
@@ -434,6 +435,9 @@ export default {
     },
     redirectBack3() {
       this.$router.push("/home");
+    },
+    redirectBalik() {
+      this.$router.push("/riwayat");
     },
   },
 };

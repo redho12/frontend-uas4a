@@ -141,12 +141,13 @@
                     <h4>Apa kamu yakin?</h4>
                     <h5>You Are Deleting {{ currentAkun.username }}</h5>
                     <hr />
-                    <button
+                    <button 
                       class="btn btn-danger btn-lg"
                       @click="
                         showDeleteModal = false;
                         hapusPerpus();
                         clearMsg();
+                        redirectBalik()
                       "
                     >
                       Yes
@@ -179,31 +180,7 @@
                   </div>
                   <div class="modal-body p-4">
                     <form action="#" method="post">
-                      <div class="text-nowrap bg-light border">
-                        Nama
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            name="username"
-                            placeholder="Alamat"
-                            class="form-control form-control-lg"
-                            v-model="currentAkun.username"
-                          />
-                        </div>
-                      </div>
-
-                      <div class="text-nowrap bg-light border">
-                        TT Lahir
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            name="ttl"
-                            placeholder="Alamat"
-                            class="form-control form-control-lg"
-                            v-model="currentAkun.ttl"
-                          />
-                        </div>
-                      </div>
+                      
 
                       <div class="text-nowrap bg-light border">
                         Alamat
@@ -447,6 +424,9 @@ export default {
     },
     redirectBack3() {
       this.$router.push('/home');
+    },
+    redirectBalik() {
+      this.$router.push('/namapeminjam');
     },
   },
 };
