@@ -110,6 +110,47 @@
               </div>
             </div>
 
+                                <!-- Delete peminjam -->
+                    <div id="overlay" v-if="showDeleteModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Delete Peminjam</h5>
+                            <button
+                              type="button"
+                              class="close"
+                              @click="showDeleteModal = false"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body p-4">
+                            <h4>Apa kamu yakin?</h4>
+                            <h5>You Are Deleting {{ currentRiwayat.isbn }}</h5>
+                            <hr />
+                            <button
+                              class="btn btn-danger btn-lg"
+                              @click="
+                                showDeleteModal = false;
+                                hapusPerpus();
+                                clearMsg();
+                                redirectBalik();
+                              "
+                            >
+                              Yes
+                            </button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button
+                              class="btn btn-success btn-lg"
+                              @click="showDeleteModal = false"
+                            >
+                              No
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
             <!-- Edit peminjam -->
             <div id="overlay" v-if="showEditModal">
               <div class="modal-dialog">
@@ -265,47 +306,6 @@
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </div>
-
-                    <!-- Delete peminjam -->
-                    <div id="overlay" v-if="showDeleteModal">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title">Delete Peminjam</h5>
-                            <button
-                              type="button"
-                              class="close"
-                              @click="showDeleteModal = false"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body p-4">
-                            <h4>Apa kamu yakin?</h4>
-                            <h5>You Are Deleting {{ currentRiwayat.isbn }}</h5>
-                            <hr />
-                            <button
-                              class="btn btn-danger btn-lg"
-                              @click="
-                                showDeleteModal = false;
-                                hapusPerpus();
-                                clearMsg();
-                                redirectBalik();
-                              "
-                            >
-                              Yes
-                            </button>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <button
-                              class="btn btn-success btn-lg"
-                              @click="showDeleteModal = false"
-                            >
-                              No
-                            </button>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </v-row>
