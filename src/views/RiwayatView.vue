@@ -56,7 +56,7 @@
                         <div class="text-nowrap bg-light border">
                         Tanggal Pinjam
                         <input
-                          type="text"
+                          type="date"
                           name="tanggl_pinjam"
                           class="form-control form-control-lg"
                           placeholder="Tanggl Pinjam"
@@ -69,7 +69,7 @@
                         <div class="text-nowrap bg-light border">
                         Tanggal Pengembalian
                         <input
-                          type="text"
+                          type="date"
                           name="tanggal_pengembalian"
                           class="form-control form-control-lg"
                           placeholder="Tanggal Pengembalian"
@@ -146,7 +146,7 @@
 
                       <div class="form-group">
                         <input
-                          type="text"
+                          type="date"
                           name="tanggl_pinjam"
                           class="form-control form-control-lg"
                           v-model="currentRiwayat.tanggl_pinjam"
